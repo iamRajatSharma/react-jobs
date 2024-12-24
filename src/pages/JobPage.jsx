@@ -13,7 +13,7 @@ const JobPage = () => {
     useEffect(() => {
         const fetchJob = async () => {
             try {
-                const res = await fetch(`http://localhost:8000/jobs/${id}`)
+                const res = await fetch(`https://react-jobs-murex.vercel.app/jobs/${id}`)
                 const data = await res.json()
                 console.log(data)
                 setJob(data)
